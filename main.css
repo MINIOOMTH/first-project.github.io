@@ -1,5 +1,6 @@
 html,body {
     font-family: 'Itim', cursive;
+    scroll-behavior: smooth;
 }
 
 .list-group-item a {

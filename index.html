@@ -15,32 +15,29 @@
 </head>
 <body>
     <div data-aos="fade-down">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container">
-            <a class="navbar-brand" href="#">Sakura</a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+          <div class="container">
+              <a class="navbar-brand" href="#">Sakura</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="#">หน้าแรก</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ความเป็นมา</a>
+                    <a class="nav-link" href="#histroy">ความเป็นมา</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">เกี่ยวกับเรา</a>
                 </li>
                 </ul>
-                <Button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-outline-primary">Home</Button>
+                <!-- <Button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-outline-primary">Home</Button> -->
             </div>
             </div>
         </nav>
     </div>
-
-
-
     <div class="container">
         <div data-aos="fade-down">
             <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
@@ -65,20 +62,22 @@
                 </button>
               </div>
         </div>
-        <div class="row mt-5">
-            <div class="col-2 text-center">
+        <div class="row mt-5"> <!--Menu Left -->
+            <div class="col-md-2 text-center">
                 <div data-aos="fade-up">
                     <p class="h2">
                         About
                     </p>
-                    
-                    <p>Sakura  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span></p>
-                      <p>Open/Close : 11.00 - 22.00</p>
+                    <p class="h5">ร้าน กุ้งอบวุ้นเส้นหน้าวัง</p>
+                    <p>สถานะ : <span id="InSpan" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>  <span id="message"></span></p>
+                    <p>ร้านเปิด : <span class="text-success">จันทร์ - ศกุร์</span></p>
+                    <p>ตั้งแต่ : <span class="text-info">11.00 น. - 20.00 น.</span></p>
+                    <p>หยุด : <span class="text-danger">วันเสาร์ - วันอาทิตย์</span></p>
                     <hr>
                 </div>
                 <div data-aos="fade-up">
                     <p class="h2">
-                        Deliveree
+                        สั่งออนไลน์
                     </p>
                     <div class="d-grid gap-2 col-6 mx-auto">
                         <button class="btn btn-outline-success position-relative">
@@ -90,12 +89,13 @@
                         </button>
                         <button class="btn btn-outline-success">Line Man</button>
                         <button class="btn btn-outline-danger">Panda</button>
+                        <button class="btn btn-outline-danger">Panda</button>
                     </div>
-                    <hr>
+                    <hr class="w-75 mx-auto">
                 </div>
                 <div data-aos="fade-up">
                     <p class="h2">
-                        Follow
+                        ติดตาม
                     </p>
                     <div class="d-grid gap-2 col-6 mx-auto">
                         <button class="btn btn-outline-danger">Instrgram</button>
@@ -105,30 +105,33 @@
                     <hr>
                 </div>
                 <div data-aos="fade-up">
+                  <p class="h2 mb-1">FanPage</p>
                     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FMINIOOMTHPAGE&tabs=timeline&width=180&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="180" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                 </div>
+                <hr class="w-75 mx-auto">
             </div>
-            <div class="col-10">
+            <div class="col-md-10">
                 <div class="text-center" data-aos="fade-up">
-                    <p class="h2">
+                    <p class="h2" id="histroy">
                         ร้าน กุ้งอบวุ้นเส้นหน้าวัง
                     </p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ducimus! </p>
-                    <img src="images/1332873.png" class="card-img-top w-50 ratio-1x1 rounded" alt="">
+                    <img src="images/1332873.png" class="card-img-top w-75 ratio-1x1 rounded" alt="">
+                    <hr class="w-25 mx-auto">
                 </div>
-                <hr class="w-75 mx-auto" data-aos="fade-up">
                 <div class="text-center" data-aos="fade-up">
                     <p class="h2">Video</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis?</p>
-                    <div class="ratio ratio-16x9 w-50 mt-2 mx-auto">
+                    <div class="ratio ratio-16x9 w-75 mt-2 mx-auto">
                         <iframe src="https://www.youtube.com/embed/VtGtO7eV2KU?si=j0fjUuJ3U0izt9eE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <hr class="w-25 mx-auto">
                 </div>
-                <hr class="w-75 mx-auto" data-aos="fade-up">
-                <div class="text-center mx-auto w-50" data-aos="fade-up">
+                <div class="text-center" data-aos="fade-up">
                     <p class="h2">Menu</p>
-                    <input class="form-control me-2" id="myInput" onkeyup="OnSearch()" type="text" placeholder="ค้นหา" >
-                    <ul id="myUL" class="list-group list-group-item-action mt-2">
+                    <div class="mx-auto w-50">
+                      <input class="form-control me-2" id="myInput" onkeyup="OnSearch()" type="text" placeholder="ค้นหา" >
+                      <ul id="myUL" class="list-group list-group-item-action mt-2">
                         <li class="list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><a href="#">Apple</a></li>
                         <li class="list-group-item list-group-item-action"><a href="#">Agnes</a></li>
                         <li class="list-group-item list-group-item-action"><a href="#">Billy</a></li>
@@ -138,34 +141,40 @@
                         <li class="list-group-item list-group-item-action"><a href="#">Cindy</a></li>
                       </ul>
                     </div>
-                <hr class="w-75 mx-auto" data-aos="fade-up">
-                <div class="w-75 mx-auto" data-aos="fade-up">
-                    <div class="row g-0 bg-light position-relative">
-                        <div class="col-md-6 mb-md-0 p-md-4">
-                          <img src="images/1331312.png" class="w-100 rounded" alt="...">
-                        </div>
-                        <div class="col-md-6 p-4 ps-md-0">
-                          <h5 class="mt-0">Columns with stretched link</h5>
-                          <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-                          <a href="#" class="btn btn-outline-primary">Go somewhere</a>
-                        </div>
-                      </div>
+                    <hr class="w-25 mx-auto">
                 </div>
-                <hr class="w-75 mx-auto" data-aos="fade-up">
-                <div class="w-75 mx-auto" data-aos="fade-up">
+                <div data-aos="fade-up">
+                  <div class="w-75 mx-auto">
+                    <div class="row g-0 position-relative">
+                      <div class="col-md-6 mb-md-0 p-md-4">
+                        <img src="images/1331312.png" class="w-100 rounded" alt="...">
+                      </div>
+                      <div class="col-md-6 p-4 ps-md-0">
+                        <h5 class="mt-0">Columns with stretched link</h5>
+                        <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                        <a href="#" class="btn btn-outline-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="w-25 mx-auto">
+                </div>
+                <div data-aos="fade-up">
+                  <div class="w-75 mx-auto">
                     <div class="card bg-dark text-white">
-                        <img src="images/736461.png" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text">Last updated 3 mins ago</p>
-                        </div>
+                      <img src="images/736461.png" class="card-img" alt="...">
+                      <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
                       </div>
+                    </div>
+                  </div>
+                  <hr class="w-25 mx-auto">
                 </div>
-                <hr class="w-75 mx-auto" data-aos="fade-up">
-                <div class="w-75 mx-auto" data-aos="fade-up">
+                <div data-aos="fade-up">
+                  <div class="w-75 mx-auto">
                     <div class="row row-cols-1 row-cols-md-3 g-4">
-                        <div class="col">
+                      <div class="col">
                           <div class="card h-100">
                             <img src="images/1331312.png" class="card-img-top ratio ratio-16x9" alt="...">
                             <div class="card-body">
@@ -202,28 +211,39 @@
                           </div>
                         </div>
                       </div>
+                    </div>
+                    <hr class="w-25 mx-auto">
                 </div>
-                <hr class="w-75 mx-auto">
-                <div class="w-75 text-center">
+                <div class="text-center" data-aos="fade-up">
                     <p class="h2">Map</p>
+                    <div class="w-100 text-center mb-2">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.0765059068244!2d100.61523947609332!3d13.894373486512524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2829faad1d767%3A0x6f531b7aec36a706!2z4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LmA4LiX4LiE4LmC4LiZ4LmC4Lil4Lii4Li14Liq4Lii4Liy4Lih4Lia4Lij4Li04Lir4Liy4Lij4LiY4Li44Lij4LiB4Li04LiIIOC4p-C4tOC4l-C4ouC4suC5gOC4guC4leC4quC4sOC4nuC4suC4meC5g-C4q-C4oeC5iA!5e0!3m2!1sth!2sth!4v1700296803855!5m2!1sth!2sth" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="row g-2">
+                      <div class="col-md-6">
+                        <div class="p-3 border bg-light">โทร : 1234567890</div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="p-3 border bg-light">อีเมล : Wow.55@gmail.com</div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="p-3 border bg-light">ที่อยู่ : Address 55/5</div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="p-3 border bg-light">Line : @กุ้งอบวุ้นเส้นหน้าวัง</div>
+                      </div>
+                    </div>
                 </div>
-
-                
-
-
             </div>
         </div>
     </div>
     <div class="container mt-5">
         <div class="row bg-light text-bg-light text-center align-items-center">
-            <div class="col">
+            <div class="col p-3">
                 <p>&copy; 2023 By Pongsakorn</p>
             </div>
         </div>
     </div>
-    
-
-
     <!-- Plugin -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -233,7 +253,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, voluptatibus.</p>
+              <p id="content"></p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
@@ -242,8 +262,6 @@
           </div>
         </div>
       </div>
-
-
     <script src="main.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
