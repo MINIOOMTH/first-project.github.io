@@ -1,0 +1,8 @@
+html,body {
+    font-family: 'Itim', cursive;
+}
+
+.list-group-item a {
+    text-decoration: none;
+    color: black;
+}
