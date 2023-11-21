@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const hours = now.getHours();
         const minutes = now.getMinutes();
 
-        const isWeekdayAndDayTime = dayOfWeek >= 1 && dayOfWeek <= 5 && hours >= 7 && minutes >= 0 && hours <= 20 && minutes <= 0;
+        const isWeekdayAndDayTime = dayOfWeek >= 1 && dayOfWeek <= 5 && hours >= 7 && minutes >= 0 && hours <= 19 && minutes <= 30;
 
         if (isWeekdayAndDayTime) {
             messageElement.textContent = "เปิดบริการ";
