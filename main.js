@@ -18,9 +18,7 @@ function OnSearch() {
     }
 }
 
-// นำ URL ของไฟล์ .txt มาใส่ที่นี่
 const txtFileUrl = 'thetext.txt';
-// ใช้ fetch เพื่อโหลดข้อมูลจากไฟล์ .txt
 fetch(txtFileUrl)
   .then(response => {
     if (!response.ok) {
@@ -29,7 +27,6 @@ fetch(txtFileUrl)
     return response.text();
   })
   .then(textData => {
-    // แสดงข้อมูลใน div ที่มี id เท่ากับ "content"
     document.getElementById('content').textContent = textData;
   })
   .catch(error => {
@@ -52,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (isWeekdayAndDayTime) {
             messageElement.textContent = "เปิดบริการ";
             InSpan.className = "text-success spinner-border spinner-border-sm";
-            messageElement.className = "text-success"; // ใช้สีเขียว
+            messageElement.className = "text-success";
         } else {
             messageElement.textContent = "ปิดบริการ";
             InSpan.className = "text-danger spinner-border spinner-border-sm";
