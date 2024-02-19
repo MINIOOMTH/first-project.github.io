@@ -1,9 +1,9 @@
 html,body {
     font-family: 'Itim', cursive;
     scroll-behavior: smooth;
+    background-color: #F9B3A4;
 }
 
-.list-group-item a {
-    text-decoration: none;
-    color: black;
+.container {
+    background-color: #fff;
 }
